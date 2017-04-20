@@ -35,7 +35,7 @@ function(data,param=NULL,priors=NULL,niter=2000,nburn=1000,thin=1,verbose=TRUE){
 	### Initiate prior values if they have not been given
 	#====================================================
 	if(is.null(priors)){
-		priors<-as.HMSCprior(data,family="poisson")
+		priors<-as.HMSCprior(data,family="overPoisson")
 	}
 
 	#=================================================================
